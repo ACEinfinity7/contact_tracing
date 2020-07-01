@@ -62,6 +62,7 @@ class Seating_matrix:
 
         return null_matrix
 
+
     def make_adj_seats(self):
         null_matrix = Seating_matrix.make_null_matrix(self.seats)
 
@@ -76,7 +77,7 @@ class Seating_matrix:
 
                 for k in range(-1,2,1):
                     for l in range(-1,2,1):
-                        
+
                         if null_matrix[i+k][j+l] == null_matrix[i][j] or null_matrix[i+k][j+l] == None:
                             continue
                         else:
